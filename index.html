@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Árbol de Amor - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="left">
+      <div class="card neon">
+        <div class="dedication">
+          <div class="ded-header">
+            <img id="userAvatar" src="" alt="avatar" class="user-avatar" style="display:none">
+            <div class="upload-controls">
+              <button id="uploadBtn" type="button">Subir foto</button>
+              <input id="uploadInput" type="file" accept="image/*" style="display:none">
+            </div>
+          </div>
+          <h2>Para  DAFNE:</h2>
+          <p id="dedText">Desde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser... todo en ti me hace sentir en casa.</p>
+        </div>
+      </div>
+
+      <!-- Avatar removed to avoid covering text -->
+    </section>
+
+    <section class="right">
+      <div class="tree center">
+        <!-- Heart-flower tree SVG (more hearts for a fuller tree) -->
+        <svg viewBox="0 0 360 440" aria-hidden="true">
+          <g transform="translate(180,260)">
+            <rect id="trunk" x="-22" y="0" width="44" height="160" rx="10" fill="#6b3b2b"/>
+            <g id="hearts">
+              <path d="M-90-40c-12-36 24-72 54-42 30-30 66 6 54 42-10 27-42 40-56 52-14-12-46-25-52-52z" fill="#ff8aa3"/>
+              <path d="M-30-90c-10-28 22-56 48-32 26-24 54 5 48 32-6 19-24 30-30 39-6-9-26-18-36-39z" fill="#ffd6c2"/>
+              <path d="M30-100c-8-24 20-48 44-26 24-22 48 5 44 26-4 16-20 26-26 33-6-7-22-15-42-33z" fill="#ff6b6b"/>
+              <path d="M70-60c-6-18 14-36 32-18 18-16 36 3 32 18-4 12-16 20-22 26-6-6-20-12-22-26z" fill="#ffd1e0"/>
+              <path d="M-10-30c-6-18 12-36 26-21 14-15 31 3 26 21-5 14-20 22-26 29-6-7-21-15-26-29z" fill="#ff7b8b"/>
+              <path d="M-60-10c-5-14 10-28 22-16 12-10 24 2 22 16-2 10-8 16-12 22-4-5-14-10-22-22z" fill="#ffe6d9"/>
+              <path d="M40-30c-5-14 10-28 22-16 12-10 24 2 22 16-2 10-8 16-12 22-4-5-14-10-22-22z" fill="#ffbfd2"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="counters">
+        <div class="together">Juntos: <span id="daysTogether">0</span> días</div>
+        <div class="countdown">LA CONOCI A SE: <span id="cd">-- días -- horas</span></div>
+      </div>
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
